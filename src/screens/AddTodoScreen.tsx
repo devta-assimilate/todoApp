@@ -11,7 +11,7 @@ const AddTodoScreen = ({ navigation }: any) => {
     return (
         <View style={{ padding: 20 }}>
             <TextInput
-                placeholder="Enter TODO"
+                placeholder="Enter TODO item"
                 value={text}
                 placeholderTextColor={GRAY_SHADE}
                 onChangeText={setText}

@@ -39,7 +39,7 @@ export default memo(function TodoItem({ todo, onToggle, onDelete, onEdit }: Prop
                     style={{ flex: 1, borderBottomWidth: 0.8 }}
                 />
             ) : (
-                <Text style={{ flex: 1, textDecorationLine: todo.completed ? 'line-through' : 'none' }}>
+                <Text style={{ flex: 1, textDecorationLine: todo.completed ? 'none' : 'none' }}>
                     {todo.title}
                 </Text>
             )}

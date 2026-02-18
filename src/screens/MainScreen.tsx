@@ -74,7 +74,7 @@ const MainScreen = ({ navigation }: any) => {
         <View style={MainScreenStyle.mainBody}>
             <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
                 <Text style={MainScreenStyle.countBody}>
-                    Total: {todos.length} | Completed: {completedCount}
+                    Total Count: {todos.length} | Completed Count: {completedCount}
                 </Text>
                 <TouchableOpacity onPress={() => setShowSortMenu(prev => !prev)}>
                     <Text style={MainScreenStyle.filterIcon}>⚙️</Text>
@@ -119,7 +119,7 @@ const MainScreen = ({ navigation }: any) => {
                 keyExtractor={item => item.id.toString()}
             />
             <View style={{ marginBottom: 10 }}>
-                <TouchableOpacity style={{ ...MainScreenStyle.buttonStyle, paddingHorizontal: 40, height: 40 }} onPress={() => navigation.navigate('AddTodo')}>
+                <TouchableOpacity style={{ ...MainScreenStyle.buttonStyle, paddingHorizontal: 40, height: 40 }} onPress={() => navigation.navigate('AddTodoScreen')}>
                     <Text style={MainScreenStyle.label}>Add Todo</Text>
                 </TouchableOpacity>
             </View>
